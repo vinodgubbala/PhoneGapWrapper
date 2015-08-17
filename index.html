@@ -5,7 +5,7 @@
 				try {
 					var value = document.getElementById("urlText").value;
 					localStorage.url = value;
-					window.location.href = document.getElementById("urlText").value;
+					window.location.href = document.getElementById("urlText").value + "";
 				} catch(ex) {
 					alert(ex);
 				}
