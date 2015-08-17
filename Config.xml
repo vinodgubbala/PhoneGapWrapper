@@ -18,4 +18,5 @@
     </author>
 
 	<gap:platform name="android" />
+	<feature name="http://api.phonegap.com/1.0/camera" />
 </widget>
