@@ -1,14 +1,21 @@
 <html>
 	<head>
-		<script type="text/javascript">
-			function onBtnClick() {
-				window.location = document.getElementById("urlText").value;
-			}
-		</script>
 	</head>
 	<body>
-		<input id="urlText" type="Text" value="http://192.168.2.84/MobileBranches/Lorikeet/mms_customer/index.html" />
+		<textarea rows="4" cols="20" id="urlText" type="Text">http://192.168.2.84/MobileBranches/Lorikeet/mms_customer/index.html</textarea>
 		<br />
 		<button onclick="onBtnClick();">Click Here</button>
+		
+		<script type="text/javascript">
+			function onBtnClick() {
+				var value = document.getElementById("urlText").value;
+				localStorage.url = value;
+				window.location = document.getElementById("urlText").value;
+			}
+			var url = localStorage.url;
+			if(url){
+				document.getElementById("urlText").value = url;
+			}
+		</script>
 	</body>
 </html>
