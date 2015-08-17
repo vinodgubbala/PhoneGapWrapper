@@ -1,5 +1,16 @@
 <html>
 	<head>
+	<script type="text/javascript">
+			function onBtnClick() {
+				try {
+					var value = document.getElementById("urlText").value;
+					localStorage.url = value;
+					window.location = document.getElementById("urlText").value;
+				} catch(ex) {
+					alert(ex);
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<textarea rows="4" cols="20" id="urlText" type="Text">http://192.168.2.84/MobileBranches/Lorikeet/mms_customer/index.html</textarea>
@@ -7,15 +18,6 @@
 		<button onclick="onBtnClick();">Click Here</button>
 		
 		<script type="text/javascript">
-			function onBtnClick() {
-				try {
-				var value = document.getElementById("urlText").value;
-				localStorage.url = value;
-				window.location = document.getElementById("urlText").value;
-				} catch(ex) {
-				alert(ex);
-				}
-			}
 			var url = localStorage.url;
 			if(url){
 				document.getElementById("urlText").value = url;
