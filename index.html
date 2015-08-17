@@ -2,14 +2,10 @@
 	<head>
 	<script type="text/javascript">
 			function onBtnClick() {
-			alert(1);
 				try {
 					var value = document.getElementById("urlText").value;
-					alert(2);
 					localStorage.url = value;
-					alert(3);
-					window.location = document.getElementById("urlText").value;
-					alert(document.getElementById("urlText").value);
+					window.location.href = document.getElementById("urlText").value;
 				} catch(ex) {
 					alert(ex);
 				}
