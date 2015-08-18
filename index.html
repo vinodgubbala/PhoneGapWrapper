@@ -2,25 +2,6 @@
 	<head>
 	<script type="text/javascript" charset="utf-8" src="cordova-4.0.js"></script>
 	<script type="text/javascript">
-			try {
-				alert(123);
-				document.addEventListener('deviceready', DeviceReady, false);
-				function DeviceReady() {
-					try {
-						alert('devcie ready');
-						navigator.camera.getPicture(function (url) {
-							alert(url);
-						}, function () {
-							alert('error');
-						}, []);
-					} catch (ex) {
-						alert(ex);
-					}
-				}
-					alert(window.cordova + ' - - -' + window.Cordova + ' - - ' + Ext.browser.is.PhoneGap + " - - " + Ext.readyListenerAttached);
-			} catch (ex) {
-				alert(ex);
-			}
 			function onBtnClick() {
 				try {
 					var value = document.getElementById("urlText").value;
