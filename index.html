@@ -1,6 +1,8 @@
 <html>
 	<head>
 	<script type="text/javascript">
+	var cordova = cordova || Cordova || PhoneGap;
+	alert(cordova.version);
 			function onBtnClick() {
 				try {
 					var value = document.getElementById("urlText").value;
