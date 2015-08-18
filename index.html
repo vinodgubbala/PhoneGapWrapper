@@ -13,7 +13,7 @@
 			function onBtnVersion() {
 			
 				try {
-					var cordova = cordova || Cordova || PhoneGap;
+					var cordova = window.cordova || window.Cordova || window.PhoneGap;
 					alert(cordova.version);
 				} catch(ex) {
 					alert(ex);
