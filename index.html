@@ -11,8 +11,13 @@
 				}
 			}
 			function onBtnVersion() {
-						var cordova = cordova || Cordova || PhoneGap;
-				alert(cordova.version);
+			
+				try {
+					var cordova = cordova || Cordova || PhoneGap;
+					alert(cordova.version);
+				} catch(ex) {
+					alert(ex);
+				}
 			}
 		</script>
 	</head>
