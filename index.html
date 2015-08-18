@@ -1,8 +1,6 @@
 <html>
 	<head>
 	<script type="text/javascript">
-	var cordova = cordova || Cordova || PhoneGap;
-	alert(cordova.version);
 			function onBtnClick() {
 				try {
 					var value = document.getElementById("urlText").value;
@@ -12,12 +10,17 @@
 					alert(ex);
 				}
 			}
+			function onBtnVersion() {
+						var cordova = cordova || Cordova || PhoneGap;
+				alert(cordova.version);
+			}
 		</script>
 	</head>
 	<body>
 		<textarea rows="4" cols="20" id="urlText" type="Text">http://192.168.2.84/MobileBranches/Lorikeet/mms_customer/index.html</textarea>
 		<br />
 		<button onclick="onBtnClick();">Click Here</button>
+		<button onclick="onBtnVersion();">Version?</button>
 		
 		<script type="text/javascript">
 			var url = localStorage.url;
