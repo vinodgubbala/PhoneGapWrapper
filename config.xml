@@ -18,8 +18,8 @@
     </author>
 
 	<gap:platform name="android" />
-	<gap:plugin name="org.apache.cordova.camera" version="0.3.2" />
-	<gap:plugin name="org.apache.cordova.file-transfer" version="0.4.6" />
+	<gap:plugin name="org.apache.cordova.camera"  />
+	<gap:plugin name="org.apache.cordova.file-transfer"  />
 	
 	<access origin="*" />
 	
